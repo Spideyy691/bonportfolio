@@ -8,287 +8,310 @@
   <meta name="keywords" content="Adam Faradji, Portfolio, BTS SIO, Technicien Support Informatique, Projets, Compétences, Adam, FARADJI, adam, faradji, aviron, décines, adam faradji décines, adamfaradji, adamfaradji.fr, bts sio, étudiant">
   <meta name="author" content="Adam Faradji, ADAM FARADJI, adam, faradji, FARADJI, ADAM, aviron">
 
-    <title>Portfolio Adam FARADJI</title>
+  <title>Portfolio Adam FARADJI</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
-  </head>
+  <!-- Custom styles for the bubble -->
+  <style>
+    .cursor-bubble {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background-color: rgba(54, 136, 243, 0.719); /* Semi-transparent blue */
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10000; /* Make sure the z-index is high enough */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
+  <div class="cursor-bubble" id="cursor-bubble"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Adam - BTS SIO</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Adam faradji">
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">à propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Expérience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Formation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Veille technologique</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Projets">Projets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Passions</a>
-          </li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Adam - BTS SIO</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="Adam faradji">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">à propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Expérience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Veille technologique</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#Projets">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Passions</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid p-0">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">Adam
+          <span class="text-primary">Faradji</span>
+        </h1>
+        <div class="subheading mb-5">49 rue Marino Simonetti
+          <a href="mailto:name@email.com">adam.frdj@gmail.com</a>
+        </div>
+        <p class="mb-5">Je suis un étudiant en première année de BTS SIO option SISR, en alternance dans le cabinet comptable Qintens à Lyon 4e.
+          Mon but est d'aider les comptables, juristes et audit de mon entreprise dans le domaine informatique par de la maintenance ou en facilitant leur travail via des logiciels ou des macros.
+        </p>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/damkilleur69">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/adam-faradji-38683a265/">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://github.com/Spideyy691">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+        <a href="https://www.dropbox.com/scl/fi/c29otsv5wmooza2vfr7uo/Adam-cv-valid.pdf?rlkey=f6z7b6meu7jnbjqv43grqon4u&dl=1" class="btn btn-primary" role="button">Télécharger mon CV</a>
         </ul>
       </div>
-    </nav>
-    <div class="container-fluid p-0">
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Adam
-            <span class="text-primary">Faradji</span>
-          </h1>
-          <div class="subheading mb-5">49 rue Marino Simonetti
-            <a href="mailto:name@email.com">adam.frdj@gmail.com</a>
+    </section>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Technicien support informatique</h3>
+            <div class="subheading mb-3">Qintens</div>
+            <p>Je m'occupe de tout ce qu'y est en rapport avec le software et l'hardware, afin de proposer une aide aux agents de l'entreprise. S'ils ont un souci informatique divers, je suis là pour le régler.</p>
           </div>
-          <p class="mb-5">Je suis un étudiant en première année de BTS SIO option SISR, en alternance dans le cabinet comptable Qintens à Lyon 4e.
-Mon but est d'aider les comptables, juristes et audit de mon entreprise dans le domaine informatique par de la maintenance ou en facilitant leur travail via des logiciels ou des macros.
-          </p>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Septembre 2023 - maintenant</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Bénévole entraineur d'aviron</h3>
+            <div class="subheading mb-3">Aviron Décinois</div>
+            <p>En tant qu'ancien adhérent au club et ayant une certaine importance, il m'est arrivé de devoir entraîné les jeunes ou les plus vieux lors des entraînements. J'ai aussi aidé le club lors des buvettes en m'occupant du stand par exemple, ou en étant animateur.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Décembre 2019 - Janvier 2024</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Agent d'entretien d'un gymnase</h3>
+            <div class="subheading mb-3">Mairie de décines</div>
+            <p>J'ai dû m'occuper de l'entretien d'un gymnase, ayant ainsi eu une formation sur les outils ménagers et les techniques de nettoyage.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Avril 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Stage découverte Pôle informatique</h3>
+            <div class="subheading mb-3">Mairie de décines - Pôle informatique</div>
+            <p>Cela a été mon premier stage dans l'informatique, celui qui m'a donné la passion vers les infrastructures réseaux avec les responsable informatiques de la maire de Décines.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Janvier 2020</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">ISITECH LYON 7E</h3>
+            <div class="subheading mb-3">BTS SIO</div>
+            <div>Services informatique aux organisations SISR</div>
+            <p>En cours</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Septembre 2023 - Mai 2025</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Lycée Charlie Chaplin Décines</h3>
+            <div class="subheading mb-3">Cursus général Spé Mathématique, Physique, Science de l'ingénieur</div>
+            <p>Obtention du Baccalauréat</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Septembre 2020 - juillet 2023</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Compétences</h2>
+
+        <div class="subheading mb-3">Logiciels &amp; Maitrisé</div>
+        <ul class="list-inline list-icons">
+        </li>
+        </ul>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            3CX, Agora, my compagny files</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Gamme Office</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Efficience I</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            SAGE COALA</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Auditsoft</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <div class="my-auto">
+        <h2 class="mb-5">Veille Technologique</h2>
+        <p>Notre époque est la plus exposée aux attaques informatiques, c'est un fait. La question n'est pas de savoir si on sera attaqué... Mais quand ?
+          Les IA, ces outils d'avenir, peuvent beaucoup jouer dans cet enjeu majeur. Des personnes, mal intentionné peuvent s'en servir à de mauvaises fins, mais pouvons, nous nous en servir afin de se protéger ?
+        </p>
+        <context> <iframe src="https://securitymadesimple.org/cybersecurity-blog/microsoft-defender-for-endpoint-explained/" width="100%" height="500" frameborder="0" scrolling="yes"></iframe></context>
+        <p class="mb-0"></p>
+      </div>
+    </section>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Projets">
+      <div class="my-auto">
+        <h2 class="mb-5">Projets effectué</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Dhyff</h3>
             <li class="list-inline-item">
-              <a href="https://twitter.com/damkilleur69">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/adam-faradji-38683a265/">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Spideyy691">
+              <a href="https://github.com/ubdaa/dhyffe">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
-          <a href="https://www.dropbox.com/scl/fi/c29otsv5wmooza2vfr7uo/Adam-cv-valid.pdf?rlkey=f6z7b6meu7jnbjqv43grqon4u&dl=1" class="btn btn-primary" role="button">Télécharger mon CV</a>
-          </ul>
+            <div class="subheading mb-3">réseau social</div>
+            <p>Dhyff était un réseau social semblable à X créé en groupe avec un camarade, alliant développement et hébergement du site web. Ce projet a été une véritable source de motivation et une énorme progression.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Octobre 2023</span>
+          </div>
         </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Technicien support informatique</h3>
-              <div class="subheading mb-3">Qintens</div>
-              <p>Je m'occupe de tout ce qu'y est en rapport avec le software et l'hardware, afin de proposer une aide aux agents de l'entreprise. S'ils ont un souci informatique divers, je suis là pour le régler.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Septembre 2023 - maintenant</span>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Bénévole entraineur d'aviron</h3>
-              <div class="subheading mb-3">Aviron Décinois</div>
-              <p>En tant qu'ancien adhérent au club et ayant une certaine importance, il m'est arrivé de devoir entraîné les jeunes ou les plus vieux lors des entraînements. J'ai aussi aidé le club lors des buvettes en m'occupant du stand par exemple, ou en étant animateur.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Décembre 2019 - Janvier 2024</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Agent d'entretien d'un gymnase</h3>
-              <div class="subheading mb-3">Mairie de décines</div>
-              <p>J'ai dû m'occuper de l'entretien d'un gymnase, ayant ainsi eu une formation sur les outils ménagers et les techniques de nettoyage.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Avril 2019</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Stage découverte Pôle informatique</h3>
-              <div class="subheading mb-3">Mairie de décines - Pôle informatique</div>
-              <p>Cela a été mon premier stage dans l'informatique, celui qui m'a donné la passion vers les infrastructures réseaux avec les responsable informatiques de la maire de Décines.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Janvier 2020</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">ISITECH LYON 7E</h3>
-              <div class="subheading mb-3">BTS SIO</div>
-              <div>Services informatique aux organisations SISR</div>
-              <p>En cours</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Septembre 2023 - Mai 2025</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Lycée Charlie Chaplin Décines</h3>
-              <div class="subheading mb-3">Cursus général Spé Mathématique,Physique,Science de l'ingénieur</div>
-              <p>Obtention du Baccalauréat</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Septembre 2020 - juillet 2023</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Compétences</h2>
-
-          <div class="subheading mb-3">Logiciels &amp; Maitrisé</div>
-          <ul class="list-inline list-icons">
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Reemind me </h3>
+            <li class="list-inline-item">
+              <a href="https://github.com/Spideyy691/Utilitaire">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </li>
-          </ul>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              3CX, Agora, my compagny files</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Gamme Office</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Efficience I</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              SAGE COALA</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-            Auditsoft</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Veille Technologique</h2>
-          <p>Notre époque est la plus exposée aux attaques informatiques, c'est un fait. La question n'est pas de savoir si on sera attaqué... Mais quand ?
-Les IA, ces outils d'avenir, peuvent beaucoup jouer dans cet enjeu majeur. Des personnes, mal intentionné peuvent s'en servir à de mauvaises fins, mais pouvons, nous nous en servir afin de se protéger ?
-          </p>
-          <context> <iframe src="https://securitymadesimple.org/cybersecurity-blog/microsoft-defender-for-endpoint-explained/" width="100%" height="500" frameborder="0" scrolling="yes"></iframe></context>
-          <p class="mb-0"></p>
-        </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Projets">
-        <div class="my-auto">
-          <h2 class="mb-5">Projets effectué</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-                <h3 class="mb-0">Dhyff</h3>
-                <li class="list-inline-item">
-                  <a href="https://github.com/ubdaa/dhyffe">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <div class="subheading mb-3">réseau social</div>
-                <p>Dhyff était un réseau social semblable à X créé en groupe avec un camarade, alliant développement et hébergement du site web. Ce projet a été une véritable source de motivation et une énorme progression.</p>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">Octobre 2023</span>
-            </div>
-        </div>  
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Reemind me </h3> 
-              <li class="list-inline-item">
-                <a href="https://github.com/Spideyy691/Utilitaire">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <div class="subheading mb-3">Gestionnaire de mot de passe</div>
-              <p>J'ai entrepris le développement d'un logiciel de gestionnaire de mot de passe, car plusieurs personnes dans mon entreprise se plaignaient qu'il y avait trop de mots de passe dans trop de logiciels. Le mien pourrait s'apparenter à Keepass, mais en beaucoup moins performant dû à mon manque d'expérience.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Juillet 2023</span>
-            </div>
+            <div class="subheading mb-3">Gestionnaire de mot de passe</div>
+            <p>J'ai entrepris le développement d'un logiciel de gestionnaire de mot de passe, car plusieurs personnes dans mon entreprise se plaignaient qu'il y avait trop de mots de passe dans trop de logiciels. Le mien pourrait s'apparenter à Keepass, mais en beaucoup moins performant dû à mon manque d'expérience.</p>
           </div>
-      </section>
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Passions</h2>
-          <p><i class="bi bi-caret-right-fill"></i> 4 fois qualifié aux championnats de France d'aviron</p>
-          <figure>
-            <img src="img/avirontous.png" alt="aviron décinois championnats france 2021" class="img-fluid img-thumbnail" height=690 width="690">
-          </figure>
-          <br>
-          <p><i class="bi bi-caret-right-fill"></i> Je suis un fan de Football, surtout du Bayern Munich et de la mannshaft</p>
-          <figure>
-            <img src="img/mannshaft.jpg" alt="aviron décinois championnats france 2021" class="img-fluid img-thumbnail" height=690 width="690">
-          </figure>         
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Juillet 2023</span>
+          </div>
         </div>
-      </section>
+    </section>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h2 class="mb-5">Passions</h2>
+        <p><i class="bi bi-caret-right-fill"></i> 4 fois qualifié aux championnats de France d'aviron</p>
+        <figure>
+          <img src="img/avirontous.png" alt="aviron décinois championnats france 2021" class="img-fluid img-thumbnail" height=690 width="690">
+        </figure>
+        <br>
+        <p><i class="bi bi-caret-right-fill"></i> Je suis un fan de Football, surtout du Bayern Munich et de la mannshaft</p>
+        <figure>
+          <img src="img/mannshaft.jpg" alt="aviron décinois championnats france 2021" class="img-fluid img-thumbnail" height=690 width="690">
+        </figure>
+      </div>
+    </section>
 
-    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
 
-  </body>
+  <!-- Custom script for cursor bubble -->
+  <script>
+    document.addEventListener('mousemove', function (e) {
+      const bubble = document.getElementById('cursor-bubble');
+      bubble.style.left = e.pageX + 'px';
+      bubble.style.top = e.pageY + 'px';
+    });
+  </script>
+
+</body>
 
 </html>
